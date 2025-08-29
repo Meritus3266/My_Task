@@ -1,0 +1,4 @@
+My Todo List:
+ - Revise Python file handling
+ - Practice error handling within a function - Practice JSON & CSV
+ - Build a small project
