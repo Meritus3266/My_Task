@@ -248,11 +248,11 @@ class NigerianBankAccount:
         return "Invalid PIN"
     
            # Private method - only the class can use this
-def __verify_pin(self, entered_pin):
+    def __verify_pin(self, entered_pin):
         return entered_pin == self.__pin
     
            # Protected method - subclasses can use this
-def _get_transaction_history(self):
+    def _get_transaction_history(self):
 
 ibrahim_account = NigerianBankAccount("Ibrahim Orekunrin", 50000)
 
