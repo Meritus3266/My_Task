@@ -6,10 +6,13 @@ import os
 from dotenv import load_dotenv
 import uvicorn
 import bcrypt
+from middleware import create_token
+
 #  Load environment variables
 load_dotenv()
 app = FastAPI(title="Simple App", version="1.0.0")
-#  Pydantic model
+token_time = int(os.getenv("token_time"))
+
 class Simple(BaseModel):
     name: str = Field(..., example="Olaiya Solomon")
     email: str = Field(..., example="olaiyasolomon@email.com")
@@ -66,6 +69,12 @@ def login(input: LoginRequest):
         verified_password = bcrypt.checkpw(input.password.encode('utf-8'), result.password.encode('utf-8'))
         if not verified_password:
           raise HTTPException(status_code=404, detail="Invalid email or password")
+       
+        create_token(details = {
+            "email": result.email,
+            "usertype": result.usertype
+        }, expiry = token_time)
+        
         return {
             "message": "Login successful",
             
