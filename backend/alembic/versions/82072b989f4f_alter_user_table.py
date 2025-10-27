@@ -19,17 +19,7 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    op.execute("""
-    ALTER TABLE user
-    ADD COLUMN userType varchar(100)
-               """)
-    
-    pass
-
+    op.add_column("user", sa.Column("gender", sa.String(20), nullable=True))
 
 def downgrade() -> None:
-    op.execute("""
-    ALTER TABLE user
-    DROP COLUMN userType
-               """)
-    pass
+    op.drop_column("user", "gender")
