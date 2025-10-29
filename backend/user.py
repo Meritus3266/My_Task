@@ -82,6 +82,30 @@ def login(input: LoginRequest):
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+
+    class courseRequest(BaseModel):
+        title: str = Field(..., example="Backend Course")
+        level: str = Field(..., example="Beginner")
+
+    @app.post("/courses")
+    def addcourses(input: courseRequest, user_data = Depends(verify_token)):
+        try:
+            query = text("""
+                INSERT INTO courses (title, level)
+                VALUES (:title, :level)
+            """)
+            db.execute(query, {"title": input.title, "level": input.level})
+            db.commit()
+            return {
+                "message": "Course added successfully",
+                "data": {
+                    "title": input.title,
+                    "level": input.level
+                      }
+            }
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     uvicorn.run(app, host=os.getenv("host"), port=int(os.getenv("port")))
