@@ -1,0 +1,50 @@
+{
+  "original_shape": null,
+  "final_shape": [
+    614,
+    23
+  ],
+  "selected_features": [
+    "Loan_ID",
+    "Gender",
+    "Married",
+    "Dependents",
+    "Education",
+    "Self_Employed",
+    "ApplicantIncome",
+    "CoapplicantIncome",
+    "LoanAmount",
+    "Loan_Amount_Term",
+    "Credit_History",
+    "Property_Area",
+    "ApplicantIncome_log",
+    "CoapplicantIncome_log",
+    "LoanAmount_log",
+    "income_to_loan_ratio",
+    "total_income",
+    "loan_term_years",
+    "emi",
+    "balance_income",
+    "loan_to_income_ratio",
+    "applicant_income_share"
+  ],
+  "engineered_features": [
+    "ApplicantIncome_log",
+    "CoapplicantIncome_log",
+    "LoanAmount_log",
+    "income_to_loan_ratio",
+    "total_income",
+    "balance_income",
+    "loan_to_income_ratio"
+  ],
+  "train_samples": 368,
+  "val_samples": 123,
+  "test_samples": 123,
+  "scaling_method": "StandardScaler",
+  "outlier_treatment": "IQR_capping",
+  "log_transformed": [
+    "residual sugar",
+    "total sulfur dioxide",
+    "chlorides"
+  ]
+}
