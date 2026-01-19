@@ -1,0 +1,65 @@
+df = pd.read_excel('eletronic_sales.xlsx')
+print("Table Head")
+df.head()
+
+df.shape
+df.info()
+
+print("Shape of the dataset")
+print("Shape:", df.shape)
+print("\n", "==" * 20)
+print("Info (data types and nulls\n")
+df.info()
+print("\n", "==" * 20)
+print("Summary statistics\n")
+print(df.describe())
+print("\n", "==" * 20)
+print("Check for missing values\n")
+df.isna().sum()
+
+for cols in df.columns:
+    print(f"{cols}: {df[cols].nunique()} unique values out of {len(df[cols])}")
+
+
+df.dtypes
+
+df['Year'] = df['Date'].dt.year
+df['Month_Name'] = df['Date'].dt.month_name()
+#df = df.drop(columns=['Month_Name'])
+
+df['Price'] = df['Price'].astype(str).str.strip().astype(float)
+
+print(f"duplicates: {df.duplicated().sum()}")
+
+df['Revennue'] = df['Price'] * df['Units']
+
+df.groupby('Date')['Revennue'].sum().plot()
+
+df.groupby('Sales Agent')['Revennue'].sum().nlargest(5)
+
+pivot = pd.pivot_table(df, values='Revennue', index="Products", columns="Year", aggfunc="sum")
+pivot
+
+# customer analysis
+print("Top 5 Sales Agent")
+df.groupby('Sales Agent')['Revennue'].sum().nlargest(5)
+
+top_agent = pd.pivot_table(df, values='Revennue', index='Sales Agent', columns='Year', aggfunc='sum')
+print("Agent Sales per Year")
+top_agent
+
+# monthly / year sales
+pd.pivot_table(df, values='Revennue', index='Sales Agent', columns='Year', aggfunc='sum')
+
+
+df.groupby('Date')['Revennue'].sum().plot()
+
+# Product Analysis
+df.groupby('Products')['Units'].sum().plot(kind='bar', color='skyblue', title="Product Analysis")
+
+# Most Proftable Products
+df.groupby('Products')['Revennue'].sum().plot(kind='bar', color='skyblue', title="Product Revenue Analysis")
+
+# Branch Analysis
+branch_summary = df.groupby('Branch')[['Revennue', 'Units', 'Products']].sum()
+branch_summary

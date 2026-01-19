@@ -1,0 +1,13 @@
+bar ="--------------------------------------------------------------------------------------------"
+print(f'{bar}')
+print("\t 1st_period\t 2nd_period\t 3rd_period\t break\t 4th_period\t 5th_period")
+print(f'{bar}')
+print("Monday\tMathematics\t English\t Physics\t\t Biology\tYoruba")
+print(f'{bar}')
+print("Tuesday\tMathematics\t Biology\t Economics\t\t Fine-Art\tChemistry")
+print(f'{bar}')
+print("Wed.day\tChemistry  \t Geography\t Physics\t\t Music\t\tPractical")
+print(f'{bar}')
+print("Ths.day\tFurther.math\t English\t Computer\t\t Agriculture\tPhysics")
+print(f'{bar}')
+print("Friday\tEnglish\t\t Mathematics\t Physics\t\t Biology\tChemistry")

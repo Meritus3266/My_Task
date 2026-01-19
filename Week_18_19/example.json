@@ -1,0 +1,14 @@
+{
+    "name": "Example",
+    "description": "This is a sample JSON file.",
+    "values": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "location": {
+        "city": "Lagos",
+        "country": "Nigeria"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "best_model": "Logistic Regression",
+  "best_model_score": 0.4808006535947712,
+  "test_accuracy": 0.5853658536585366,
+  "test_balanced_acc": 0.5835913312693499,
+  "test_f1": 0.5627047751829906,
+  "confusion_matrix": [
+    [
+      22,
+      16
+    ],
+    [
+      35,
+      50
+    ]
+  ],
+  "feature_importance": null
+}
