@@ -1,0 +1,87 @@
+2026-02-09 15:00:49,809 - __main__ - INFO - Using device: cpu
+2026-02-09 15:00:49,835 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-09 15:00:49,836 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-09 15:00:49,942 - __main__ - INFO - Dataset contains 17 samples
+2026-02-09 15:00:49,944 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-09 15:00:49,949 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-09 15:01:08,441 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 11:04:22,442 - __main__ - INFO - Using device: cpu
+2026-02-10 11:04:22,457 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 11:04:22,458 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 11:04:22,522 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 11:04:22,522 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 11:04:22,537 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 11:04:29,597 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 11:08:59,696 - __main__ - INFO - Using device: cpu
+2026-02-10 11:08:59,697 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 11:08:59,697 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 11:08:59,700 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 11:08:59,701 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 11:08:59,702 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 11:09:05,160 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 11:27:12,023 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /microsoft/DialoGPT-medium/resolve/main/generation_config.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x19a53186900>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 6a9a0d7e-9baa-46d5-8ca2-13d127760916)')' thrown while requesting HEAD https://huggingface.co/microsoft/DialoGPT-medium/resolve/main/generation_config.json
+2026-02-10 11:27:13,100 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-02-10 11:27:38,917 - __main__ - INFO -  Model and tokenizer loaded successfully
+2026-02-10 11:30:23,389 - __main__ - INFO - Using device: cpu
+2026-02-10 11:30:23,390 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 11:30:23,391 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 11:30:23,434 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 11:30:23,435 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 11:30:23,437 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 11:30:37,638 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 11:31:22,302 - __main__ - INFO -  Model and tokenizer loaded successfully
+2026-02-10 11:38:32,992 - __main__ - INFO - Using device: cpu
+2026-02-10 11:38:33,010 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 11:38:33,011 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 11:38:33,060 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 11:38:33,061 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 11:38:33,062 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 11:38:46,248 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 11:40:47,063 - __main__ - INFO -  Model and tokenizer loaded successfully
+2026-02-10 12:03:03,789 - __main__ - INFO - Using device: cpu
+2026-02-10 12:03:03,802 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 12:03:03,802 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 12:03:03,918 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 12:03:03,919 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 12:03:03,921 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 12:03:18,485 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 12:04:53,444 - __main__ - INFO -  Model and tokenizer loaded successfully
+2026-02-10 12:07:22,483 - __main__ - INFO - Using device: cpu
+2026-02-10 12:07:22,484 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 12:07:22,484 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 12:07:22,579 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 12:07:22,586 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 12:07:22,588 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 12:07:24,914 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 12:08:14,128 - __main__ - INFO -  Model and tokenizer loaded successfully
+2026-02-10 14:03:31,086 - __main__ - INFO - Using device: cpu
+2026-02-10 14:03:31,316 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 14:03:31,317 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 14:03:31,535 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 14:03:31,536 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 14:03:31,571 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 14:03:53,629 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 15:00:33,359 - __main__ - INFO - Using device: cpu
+2026-02-10 15:00:33,389 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 15:00:33,389 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 15:00:33,454 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 15:00:33,454 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 15:00:33,456 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 15:00:47,237 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 15:02:12,201 - __main__ - INFO -  Model and tokenizer loaded successfully
+2026-02-10 15:04:11,330 - __main__ - INFO - Using device: cpu
+2026-02-10 15:04:11,330 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 15:04:11,330 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 15:04:11,474 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 15:04:11,475 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 15:04:11,478 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 15:04:14,888 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 15:05:07,709 - __main__ - INFO -  Model and tokenizer loaded successfully
+2026-02-10 15:06:34,134 - __main__ - INFO - Using device: cpu
+2026-02-10 15:06:34,134 - __main__ - INFO - JSONL dataset: C:\Users\ncc333\Desktop\My_Task\fine tuning\New folder\fine_tune_dataset.jsonl
+2026-02-10 15:06:34,134 - __main__ - INFO - Output directory: lora-finetuned-model
+2026-02-10 15:06:34,309 - __main__ - INFO - Dataset contains 17 samples
+2026-02-10 15:06:34,310 - __main__ - INFO - Sample structure: ['text', 'filename']
+2026-02-10 15:06:34,313 - __main__ - INFO - Loading model: microsoft/DialoGPT-medium
+2026-02-10 15:06:47,166 - __main__ - INFO - Set pad_token to eos_token
+2026-02-10 15:07:33,348 - __main__ - INFO -  Model and tokenizer loaded successfully
